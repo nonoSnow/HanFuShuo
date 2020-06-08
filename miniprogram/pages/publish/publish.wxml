@@ -1,0 +1,37 @@
+<!--pages/publish/publish.wxml-->
+<view class="card">
+  <van-uploader
+    file-list="{{ fileList }}"
+    max-count="4"
+    bind:after-read="afterRead"
+    bind:delete="delete"
+  />
+  <van-cell-group>
+    <van-field
+      value="{{ title }}"
+      maxlength="20"
+      show-word-limit="true"
+      required
+      clearable
+      placeholder="填写标题会有更多赞哦~"
+      bind:change="changeTitle"
+    />
+
+    <van-field
+      value="{{ content }}"
+      type="textarea"
+      placeholder="添加正文"
+      maxlength="200"
+      show-word-limit="true"
+      required
+      border="{{ false }}"
+      custom-style="height:500rpx;"
+      autosize="{maxHeight: 500rpx}"
+      bind:change="changeContent"
+    />
+  </van-cell-group>
+  <view style="margin:20rpx 0;">
+    <van-button round type="info" size="large" color="#ff6699" bind:click="publish">发布</van-button>
+  </view>
+</view>
+<van-dialog id="van-dialog" />

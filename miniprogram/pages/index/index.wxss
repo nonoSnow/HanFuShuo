@@ -1,0 +1,10 @@
+/* pages/index/index.wxss */
+.content{
+  margin: 15rpx;
+}
+.text-link{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 200rpx;
+}

@@ -1,0 +1,12 @@
+/* pages/detail/detail.wxss */
+.cell{
+  display: flex;
+  margin-bottom: 10rpx;
+  padding-bottom: 10rpx;
+  border-bottom: 1rpx solid #aaa;
+}
+.cell>view{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

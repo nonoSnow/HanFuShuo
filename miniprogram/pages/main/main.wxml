@@ -1,0 +1,9 @@
+<!--pages/main/main.wxml-->
+<view style="margin-top:150rpx;text-align:center;">
+  <view>
+    <van-icon name="comment-o" color="#ff6699" size="100px"/>
+  </view>
+  <van-button open-type="getUserInfo" bindgetuserinfo="f2" color="linear-gradient(to right, #4bb0ff, #ff6699)">
+    微信登录
+  </van-button>
+</view>

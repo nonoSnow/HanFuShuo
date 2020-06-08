@@ -1,0 +1,24 @@
+/* pages/me/me.wxss */
+.content{
+  margin: 15rpx;
+}
+.title{
+  background-color:white;
+  padding:15rpx;
+  display: flex;
+  align-items: center;
+  color: #555555;
+  border-bottom: 1rpx solid #ff6699;
+}
+.title>van-image{
+  margin-right: 15rpx;
+}
+.title>view>view:hover{
+  color:#ff6699;
+}
+
+.tip{
+  margin-top: 30rpx;
+  text-align: center;
+  color:#ff6699;
+}

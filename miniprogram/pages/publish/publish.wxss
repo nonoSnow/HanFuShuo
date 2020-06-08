@@ -1,0 +1,6 @@
+/* pages/publish/publish.wxss */
+.card{
+  background-color: white;
+  padding: 25rpx;
+  height: 100%;
+}

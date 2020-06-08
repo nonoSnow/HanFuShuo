@@ -1,0 +1,39 @@
+<!--pages/me/me.wxml-->
+
+<view>
+  <view class="title">
+    <van-image round fit="contain" width="150rpx" height="150rpx" src="{{userInfo.userImg}}" />
+    <view>
+      <view>当前用户：{{userInfo.userName}}</view>
+      <view>总获赞数：{{heartAll}}</view>
+    </view>
+  </view>
+  <view class="content">
+    <block wx:if="{{userHanfu.length}}">
+      <van-row gutter="6">
+        <van-col span="12" wx:for="{{userHanfu}}" wx:key="index">
+          <view style="background-color:#fff;margin-bottom:6px;">
+            <image style="width:100%;height:240rpx" src="{{item.pics[0]}}" bindtap="toDetail" data-detail-id="{{item._id}}"></image>
+            <van-cell>
+              <view slot="title">
+                <view class="van-cell-text text-link">
+                  <view style="display:flex;align-items:center;">
+                    <image style="width:50rpx;height:50rpx;border-radius:50%;margin-right:10rpx" src="{{item.userImg}}"></image>
+                    <text>{{item.userName}}</text>
+                  </view>
+                </view>
+              </view>
+              <view slot="right-icon">
+                <view class="value-class"><van-icon name="like" color="#ff6699" bindtap="heartAdd"  data-heart-id="{{item._id}}" data-heart-count="{{item.heart}}" />{{item.heart}}</view>
+              </view>
+            </van-cell>
+          </view>
+        </van-col>
+      </van-row>
+    </block>
+    <block wx:else>
+      <view class="tip">你还没有发布任何汉服说哦~</view>
+    </block>
+  </view>
+</view>
+<van-dialog id="van-dialog" />

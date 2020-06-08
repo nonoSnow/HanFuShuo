@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/main/main",
+    "pages/detail/detail",
+    "pages/publish/publish",
+    "pages/index/index",
+    "pages/me/me"
+  ],
+  "window": {
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ff6699",
+    "navigationBarTitleText": "汉服说",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "selectedColor": "#ff6699",
+    "color": "#bfbfbf",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/index1.png",
+        "selectedIconPath": "images/index_active1.png"
+      },
+      {
+        "pagePath": "pages/publish/publish",
+        "text": "",
+        "iconPath": "images/publish.png",
+        "selectedIconPath": "images/publish_active.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/user_active.png"
+      }
+    ]
+  }
+}
